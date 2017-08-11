@@ -1,9 +1,5 @@
 /* --- Semantic Elements --- */
 
-div {
-  border: 1px solid black;
-}
-
 html {
   font-family: Georgia;
   font-size: 17px;
@@ -47,6 +43,7 @@ nav a {
 
 .column {
   flex-direction: column;
+  margin: 20px;
 }
 
 .jus-between {
@@ -57,8 +54,16 @@ nav a {
   width: 630px;
 }
 
-.story {
+.column.medium {
+  width: 300px;
+}
 
+.column.small {
+  width: 240px;
+}
+
+.story {
+  margin: 10px;
 }
 
 .title {
@@ -66,15 +71,41 @@ nav a {
   font-weight: bold;
 }
 
+.story-text {
+  margin: 20px 0 40px 0;
+}
+
 .text-img {
   color: white;
-  text-align: center;
   align-items: center;
+  height: 300px;
+  align-content: center;
+}
+
+.center {
+  text-align: center;
 }
 
 .half {
   display: flex;
   width: 50%;
+}
+
+.news-bites {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.small p span {
+  display: block;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  padding: 15px;
+  border-bottom: 1px solid black;
 }
 
 /* --- IDs --- */
@@ -91,6 +122,7 @@ nav a {
 #story-main .text-img {
   background-image: url("img/img-story-main.png");
   font-size: 40px;
+  padding: 0 20px;
 }
 
 #story1 {
