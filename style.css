@@ -1,5 +1,14 @@
 /* --- Semantic Elements --- */
 
+div {
+  border: 1px solid black;
+}
+
+html {
+  font-family: Georgia;
+  font-size: 17px;
+}
+
 header {
   font-family: Verdana;
   font-size: 14px;
@@ -24,6 +33,7 @@ nav a {
 }
 
 
+
 /* --- Classes --- */
 
 .logo {
@@ -35,8 +45,65 @@ nav a {
   display: flex;
 }
 
-.inline-block {
-  display: inline-block;
+.column {
+  flex-direction: column;
+}
+
+.jus-between {
+  justify-content: space-between;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.story {
+
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.text-img {
+  color: white;
+  text-align: center;
+  align-items: center;
+}
+
+.half {
+  display: flex;
+  width: 50%;
 }
 
 /* --- IDs --- */
+
+#body-main {
+  margin-top: 40px;
+  justify-content: center;
+}
+
+#story-main {
+  flex-direction: column;
+}
+
+#story-main .text-img {
+  background-image: url("img/img-story-main.png");
+  font-size: 40px;
+}
+
+#story1 {
+  background-image: url("img/img-story-1.png");
+  height: 300px;
+}
+
+#story2 {
+  background-image: url("img/img-story-2.png");
+  height: 300px;
+}
+
+#story3 {
+  background-image: url("img/img-story-3.png");
+  height: 300px;
+}
