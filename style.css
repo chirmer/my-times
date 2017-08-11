@@ -15,8 +15,20 @@ header {
   padding: 10px 40px;
 }
 
-header span {
+header span, footer nav span {
   padding: 0 10px;
+}
+
+footer {
+  margin: auto;
+  height: 300px;
+  background-color: MediumAquamarine;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  margin: 10px auto;
 }
 
 nav {
@@ -27,8 +39,6 @@ nav {
 nav a {
   color: black;
 }
-
-
 
 /* --- Classes --- */
 
@@ -48,6 +58,10 @@ nav a {
 
 .jus-between {
   justify-content: space-between;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .column.large {
@@ -108,6 +122,11 @@ nav a {
   border-bottom: 1px solid black;
 }
 
+.footer {
+  font-size: 12px;
+  font-family: Verdana;
+}
+
 /* --- IDs --- */
 
 #body-main {
@@ -138,4 +157,12 @@ nav a {
 #story3 {
   background-image: url("img/img-story-3.png");
   height: 300px;
+}
+
+#footer-name {
+  font-weight: bold;
+  color: white;
+  padding: 0 20px;
+  border-right: 2px solid white;
+  margin-right: 20px;
 }
